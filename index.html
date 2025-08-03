@@ -3,120 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Site But your solution</title>
-  <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Orbitron', sans-serif;
-  background: #0f0f0f;
-  color: #ffffff;
-  scroll-behavior: smooth;
-}
-header {
-  position: fixed;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-.logo {
-  font-size: 24px;
-  color: #00ffff;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  margin-left: 20px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: 0.3s;
-}
-nav ul li a:hover {
-  color: #00ffff;
-}
-.hero {
-  height: 100vh;
-  background: linear-gradient(to right, #000000, #1a1a1a);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-}
-.content {
-  text-align: center;
-}
-.content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-.highlight {
-  color: #00ffff;
-}
-.cursor {
-  animation: blink 0.8s infinite;
-}
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  border: 2px solid #00ffff;
-  color: #00ffff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-.btn:hover {
-  background: #00ffff;
-  color: #000;
-}
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-.project-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.project-card {
-  background: #1a1a1a;
-  padding: 40px;
-  border-radius: 10px;
-  width: 250px;
-  transition: 0.3s;
-}
-.project-card:hover {
-  transform: scale(1.05);
-  background: #333;
-}
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #111;
-  color: #999;
-}
+  <title>My Site But Your Solution</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- ✅ External font link (outside style tag) -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    </style>
+
+  <!-- ✅ CSS (clean style block) -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 24px;
+      color: #00ffff;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00ffff;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
+    }
+    .content {
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: #00ffff;
+    }
+    .cursor {
+      animation: blink 0.8s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+    }
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .project-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 10px;
+      width: 250px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      background: #333;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
 
@@ -148,7 +150,7 @@ footer {
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project-card">Minor Project </div>
+      <div class="project-card">Minor Project</div>
       <div class="project-card">Website</div>
       <div class="project-card">Major Project</div>
     </div>
@@ -156,44 +158,44 @@ footer {
 
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email me at <a href="mailto:Jhajidebanshu@gmail.com">Jhajidebanshu@gmil.com</a></p>
+    <p>Email me at <a href="mailto:Jhajidebanshu@gmail.com">Jhajidebanshu@gmail.com</a></p>
   </section>
 
   <footer>
     <p>© 2025 Debanshu | All Rights Reserved</p>
   </footer>
 
-  <script src="script.js">const typedText = document.getElementById("typed-text");
-const phrases = ["a Developer", "a Designer", "a Dreamer"];
-let currentPhrase = 0;
-let currentChar = 0;
-let isDeleting = false;
+  <!-- ✅ JavaScript correctly included -->
+  <script>
+    const typedText = document.getElementById("typed-text");
+    const phrases = ["a Developer", "a Designer", "a Dreamer"];
+    let currentPhrase = 0;
+    let currentChar = 0;
+    let isDeleting = false;
 
-function type() {
-  const current = phrases[currentPhrase];
-  if (isDeleting) {
-    currentChar--;
-  } else {
-    currentChar++;
-  }
+    function type() {
+      const current = phrases[currentPhrase];
+      if (isDeleting) {
+        currentChar--;
+      } else {
+        currentChar++;
+      }
 
-  typedText.textContent = current.substring(0, currentChar);
+      typedText.textContent = current.substring(0, currentChar);
 
-  if (!isDeleting && currentChar === current.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-  } else if (isDeleting && currentChar === 0) {
-    isDeleting = false;
-    currentPhrase = (currentPhrase + 1) % phrases.length;
-    setTimeout(type, 500);
-  } else {
-    setTimeout(type, isDeleting ? 50 : 100);
-  }
-}
+      if (!isDeleting && currentChar === current.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && currentChar === 0) {
+        isDeleting = false;
+        currentPhrase = (currentPhrase + 1) % phrases.length;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+    }
 
-document.addEventListener("DOMContentLoaded", type);
-</script>
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
 </body>
 </html>
-
-
