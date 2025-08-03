@@ -4,8 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Site But your solution</title>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo {
+  font-size: 24px;
+  color: #00ffff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #00ffff;
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.highlight {
+  color: #00ffff;
+}
+.cursor {
+  animation: blink 0.8s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #00ffff;
+  color: #000;
+}
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.project-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  color: #999;
+}
+
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    </style>
 </head>
 <body>
 
@@ -55,3 +166,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
