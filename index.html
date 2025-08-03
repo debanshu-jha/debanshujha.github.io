@@ -163,7 +163,37 @@ footer {
     <p>© 2025 Debanshu | All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js">const typedText = document.getElementById("typed-text");
+const phrases = ["a Developer", "a Designer", "a Dreamer"];
+let currentPhrase = 0;
+let currentChar = 0;
+let isDeleting = false;
+
+function type() {
+  const current = phrases[currentPhrase];
+  if (isDeleting) {
+    currentChar--;
+  } else {
+    currentChar++;
+  }
+
+  typedText.textContent = current.substring(0, currentChar);
+
+  if (!isDeleting && currentChar === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else if (isDeleting && currentChar === 0) {
+    isDeleting = false;
+    currentPhrase = (currentPhrase + 1) % phrases.length;
+    setTimeout(type, 500);
+  } else {
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", type);
+</script>
 </body>
 </html>
+
 
